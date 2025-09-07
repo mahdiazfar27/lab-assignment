@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/layout/Sidebar';
-import Services from './pages/Services'; // Corrected import path
-import Doctors from './pages/Doctors'; // Corrected import path
+import Services from './pages/Services'; 
+import Doctors from './pages/Doctors'; 
 import './App.css';
 
 function App() {

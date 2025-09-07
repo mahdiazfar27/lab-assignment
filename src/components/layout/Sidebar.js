@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // Import NavLink
+import { NavLink } from 'react-router-dom'; 
 import './Sidebar.css';
 
 const Sidebar = ({ isOpen }) => {
@@ -8,7 +8,7 @@ const Sidebar = ({ isOpen }) => {
       <h1 className="logo">Smile Studio</h1>
       <nav className="sidebar-nav">
         <ul>
-          {/* Replace <a> tags with NavLink */}
+          {}
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/services">Services</NavLink></li>
           <li><NavLink to="/doctors">Doctors</NavLink></li>

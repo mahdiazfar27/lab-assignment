@@ -24,7 +24,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* New Calendar Section */}
+        {/* Calendar Section */}
         <div className="calendar-container">
           <div className="calendar-header">
             <button className="calendar-nav">&lt;</button>
@@ -35,7 +35,7 @@ const Services = () => {
             {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map(day => (
               <div key={day} className="calendar-day-name">{day}</div>
             ))}
-            {/* Generating static dates for display */}
+            {/* Generating dates*/}
             {[...Array(31).keys()].map(i => {
               const day = i + 1;
               let classNames = "calendar-day";
@@ -46,7 +46,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* New Available Times Section */}
+        {/*Available Time Section */}
         <div className="available-times-container">
             <h4>Available Times on July 5, 2024</h4>
             <div className="time-slots-grid">
@@ -58,7 +58,7 @@ const Services = () => {
             </div>
         </div>
         
-        {/* New Confirm Button */}
+        {/*Confirm Button */}
         <div className="confirm-booking-container">
           <button className="confirm-booking-btn">Confirm Booking</button>
         </div>

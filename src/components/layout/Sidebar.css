@@ -7,11 +7,11 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  transition: margin-left 0.3s ease; /* Add this line */
+  transition: margin-left 0.3s ease; 
 }
 
 .sidebar.closed {
-  margin-left: -250px; /* Hides the sidebar off-screen */
+  margin-left: -250px; 
 }
 
 .sidebar .logo {
