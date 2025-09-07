@@ -19,6 +19,7 @@
 .form-row {
   display: flex;
   gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .form-group {
@@ -39,4 +40,120 @@
   border-radius: 4px;
   font-size: 1rem;
   width: 100%;
+}
+
+/* Calendar Styles */
+.calendar-container {
+  margin-bottom: 2rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-header h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.calendar-nav {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.calendar-day-name {
+  font-weight: 600;
+  color: #777;
+  padding-bottom: 0.5rem;
+}
+
+.calendar-day {
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+
+.calendar-day.selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.calendar-day.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* Available Times Styles */
+.available-times-container h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.75rem;
+}
+
+.time-slot {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.time-slot:hover {
+    background-color: #f0f0f0;
+}
+
+.time-slot.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.time-slot.disabled {
+    background-color: #f9f9f9;
+    color: #ccc;
+    cursor: not-allowed;
+    border-color: #eee;
+}
+
+/* Confirm Booking Styles */
+.confirm-booking-container {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.confirm-booking-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
 }
