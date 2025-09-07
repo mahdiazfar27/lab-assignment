@@ -1,9 +1,10 @@
 import React from 'react';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+        
       <h1 className="logo">Smile Studio</h1>
       <nav className="sidebar-nav">
         <ul>
