@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/layout/Sidebar';
+import Services from './pages/Services'; // Corrected import path
+import Doctors from './pages/Doctors'; // Corrected import path
 import './App.css';
 
 function App() {
@@ -10,21 +13,26 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <Sidebar isOpen={isSidebarOpen} />
-      
-      {/* Button is now OUTSIDE main-content */}
-      <button 
-        onClick={toggleSidebar} 
-        className={`sidebar-toggle ${!isSidebarOpen ? 'collapsed' : ''}`}
-      >
-        {isSidebarOpen ? '✕' : '☰'} 
-      </button>
+    <Router>
+      <div className="app-container">
+        <Sidebar isOpen={isSidebarOpen} />
+        
+        <button 
+          onClick={toggleSidebar} 
+          className={`sidebar-toggle ${!isSidebarOpen ? 'collapsed' : ''}`}
+        >
+          {isSidebarOpen ? '✕' : '☰'} 
+        </button>
 
-      <div className="main-content">
-        <h1>Welcome to Smile Studio</h1>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Services />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/doctors" element={<Doctors />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

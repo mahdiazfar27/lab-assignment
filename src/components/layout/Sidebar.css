@@ -42,7 +42,7 @@
   background-color: #f0f0f0;
 }
 
-.sidebar-nav li.active a {
+.sidebar-nav a.active {
   background-color: #eef2f7;
   color: #007bff;
   font-weight: bold;
