@@ -12,10 +12,16 @@ function App() {
   return (
     <div className="app-container">
       <Sidebar isOpen={isSidebarOpen} />
-      <div className={`main-content ${isSidebarOpen ? 'shifted' : ''}`}>
-        <button onClick={toggleSidebar} className="sidebar-toggle">
-          {isSidebarOpen ? '☰' : '☰'}
-        </button>
+      
+      {/* Button is now OUTSIDE main-content */}
+      <button 
+        onClick={toggleSidebar} 
+        className={`sidebar-toggle ${!isSidebarOpen ? 'collapsed' : ''}`}
+      >
+        {isSidebarOpen ? '✕' : '☰'} 
+      </button>
+
+      <div className="main-content">
         <h1>Welcome to Smile Studio</h1>
       </div>
     </div>
