@@ -5,13 +5,13 @@
 .main-content {
   flex-grow: 1;
   padding: 2rem;
-  /* Margin is controlled by the sidebar's presence */
+  
 }
 
 .sidebar-toggle {
-  position: fixed; /* Keep it fixed */
+  position: fixed; 
   top: 20px;
-  left: 270px; /* Position it just to the right of the OPEN sidebar */
+  left: 270px; 
   z-index: 1000;
   
   background: #007bff;
@@ -24,8 +24,8 @@
 }
 
 .sidebar-toggle.collapsed {
-  left: 20px; /* When collapsed, move it back to the far left */
-  background: #f4f7fc; /* Match the body background */
+  left: 20px; 
+  background: #f4f7fc; 
   color: #333;
   border: 1px solid #ddd;
 }
